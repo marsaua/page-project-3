@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?_v=20240212122722" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css?_v=20240212122722">
+    <title>Step Project Two</title>
+</head>
+
+<body>
+
+            
+<header class="header bg-primary-subtle">
+    <nav class="header_menu d-flex justify-content-around align-items-center">
+        <a href="#" class="logo d-flex justify-content-center align-items-center">
+            <img class="logo_img" src="../img/hospita.png" alt="logo">
+            <div class="align-items-center fw-bold lh-1">
+                <p class="logo_text fs-4"> <span class="colored">H</span>ealth</p>
+            </div>
+            
+        </a>
+        <a class="menu_tel_wrap d-flex justify-content-center align-items-center">
+            <img class="tel_img" src="../img/icons8-telephone-64.png" alt="">
+            <p href="#" class="menu_tel">Telephone Directory</p>
+        </a>
+        <div class="menu_info-wrapper">
+            <a href="#" class="menu_information">Information for employees</a>
+        </div>
+        <button type="submit" class="btn btn-primary log_in_button">LogIn</button>
+        <button type="submit" class="btn btn-primary create_appoint_button" id="new_appointment_button">Create a new appointment</button>
+    </nav>
+</header>
+            <main class="main bg-body-tertiary">
+  <div class="bg-body">
+    <div class="main_conteiner conteiner">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            About Us
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Advocacy
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            Resources
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <p>
+            Global Health Council is the leading member organization devoted to
+            advancing global health priorities by uniting advocates,
+            implementers, policy makers, and other stakeholders.
+          </p>
+          <p>
+            Countries—within and across borders—must increase funding, enact
+            informed policies, and ensure access to care for all people in order
+            to safeguard the world against disease and build healthier, more
+            sustainable communities.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <p>
+            Health for some is not good enough. An equitable opportunity to be
+            as healthy as possible is necessary for all. Achieving equity in
+            global health requires a collective approach that reaches across
+            sectors, communities and countries, with health and social justice
+            at its core.
+          </p>
+          <p>
+            GHC’s community of advocates, including those who might not
+            ordinarily have a seat at the table, are increasingly becoming key
+            players in these critical conversations. Our goal is to help elevate
+            the voices of civil society to ensure all perspectives are included
+            in decision making.
+          </p>
+          <p>
+            COVID-19 brought to light the gross inequities faced by people who
+            are marginalized and minority populations. But it’s also offered us
+            a chance to amplify the voices of these often overlooked
+            populations.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          <p>
+            The U.S. has a long history of fighting diseases, developing
+            effective programs, and building health systems throughout the
+            world. This strong stewardship has helped spur incredible progress
+            and innovation in global health.
+          </p>
+          <p>
+            The U.S. has a long history of fighting diseases, developing
+            effective programs, and building health systems throughout the
+            world. This strong stewardship has helped spur incredible progress
+            and innovation in global health. But the work is far from over,
+            particularly in a rapidly changing global health landscape. The list
+            of threats to global health progress is daunting: mass migration,
+            zoonotic spillover, natural disasters, changing disease patterns,
+            and, of course, three years of a destabilizing global pandemic.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <form class="login_form">
+      <div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            autocomplete="username"
+            value="cooluser@gmail.com"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            autocomplete="current-password"
+            value="SuperPuper123"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary login_submit">
+          Submit
+        </button>
+        <p class="email_wrong">Check your Email and Password.</p>
+      </div>
+      <button
+        type="button"
+        class="btn-close"
+        id="close_login"
+        aria-label="Close"
+      ></button>
+    </form>
+
+    <div class="cards_wrapper">
+      <form class="filter_input d-flex flex-row mb-3 align-items-center">
+        <div class="mb-3">
+          <label for="search_filter" class="form-label"></label>
+          <input
+            type="input"
+            class="form-control search_input"
+            id="search_filter"
+          />
+        </div>
+
+        <div class="status">
+          <select class="cards__select" name="status" id="statusSelect">
+            <option value="" selected disabled>Status</option>
+            <option value="all">All</option>
+            <option value="open">Open</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+
+        <div class="urgency">
+          <select class="cards__select" name="urgency" id="urgencySelect">
+            <option value="" selected disabled>Urgency</option>
+            <option value="all">All</option>
+            <option value="high">High</option>
+            <option value="normal">Normal</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <button type="button" class="delete-button">Delete all cards</button>
+      </form>
+      <p class="no__cards">No items have been added</p>
+    </div>
+    <div class="order__cards"></div>
+  </div>
+  <div class="modal_cards"></div>
+</main>
+
+            
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js?_v=20240212122722"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js?_v=20240212122722"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+<script src="./js/script.min.js?_v=20240212122722"></script>
+</body>
+
+</html>
